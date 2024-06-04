@@ -1,0 +1,117 @@
+.intro {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 50px;
+  background-image: url("https://imgs.search.brave.com/9jWGAFgQqwkEIVq9Khc0nga47LOR1JFy0FUU6Ke9Loc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/NjMwODkxNDUtNTk5/OTk3Njc0ZDQyP3E9/ODAmdz0xMDAwJmF1/dG89Zm9ybWF0JmZp/dD1jcm9wJml4bGli/PXJiLTQuMC4zJml4/aWQ9TTN3eE1qQTNm/REI4TUh4elpXRnlZ/Mmg4Tm54OGJYVnph/V01sTWpCaVlXTnJa/M0p2ZFc1a2ZHVnVm/REI4ZkRCOGZId3c");
+  /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  box-sizing: border-box;
+  flex: 1;
+}
+
+.intro-text {
+  max-width: 50%;
+}
+
+.intro-text h1 {
+  font-size: 3em;
+  margin: 0 0 20px;
+  color: rgb(161, 26, 26);
+}
+
+.intro-text p {
+  font-size: 1.5em;
+  margin: 0 0 30px;
+  color: white;
+}
+
+.intro-text button {
+  padding: 15px 30px;
+  font-size: 1em;
+  color: #fff;
+  background-color: red;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.15;
+}
+
+.intro-text button:hover {
+  background-color: #93076e;
+}
+
+.slider {
+  margin-left: 100px;
+  width: 400px;
+  max-width: 400px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.slides {
+  display: flex;
+  width: 300%;
+  animation: slide 15s infinite;
+}
+
+.slide {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.slide img {
+  width: 400px;
+  height: 400px;
+  display: block;
+  border-radius: 10px;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+
+  33% {
+    transform: translateX(-100%);
+  }
+
+  66% {
+    transform: translateX(-200%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 750px) {
+  .intro {
+    height: 1100px;
+    margin-left: 30px;
+  }
+
+  .slide img {
+    width: 300px;
+    height: 300px;
+    display: block;
+    border-radius: 10px;
+  }
+}
+
+@media (min-width: 751px) and (max-width: 999px) {
+  .intro {
+    height: 900px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .playlists {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 30px;
+  }
+}

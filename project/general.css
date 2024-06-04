@@ -1,0 +1,45 @@
+body {
+    /* background-color:rgb(18, 15, 15); */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+    transition: scroll-behaviour 2s;
+    padding-top: 00px;
+}
+
+#dark,
+#light {
+    width: max-content;
+    padding: 0.5rem 0.5rem;
+    border-radius: 4rem;
+    border: solid 0.1rem;
+    font-weight: bold;
+    background: black;
+}
+
+#theme {
+    display: none;
+}
+
+#dark {
+    display: none;
+}
+
+#light {
+    display: block;
+}
+
+/* all dark theme styling */
+body:has(#theme:checked) {
+    background: black;
+    color: white;
+}
+
+body:has(#theme:checked) #dark {
+    display: block;
+}
+
+body:has(#theme:checked) #light {
+    display: none;
+}

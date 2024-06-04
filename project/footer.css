@@ -1,0 +1,52 @@
+.footer {
+    background-image: url("https://imgs.search.brave.com/9jWGAFgQqwkEIVq9Khc0nga47LOR1JFy0FUU6Ke9Loc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/NjMwODkxNDUtNTk5/OTk3Njc0ZDQyP3E9/ODAmdz0xMDAwJmF1/dG89Zm9ybWF0JmZp/dD1jcm9wJml4bGli/PXJiLTQuMC4zJml4/aWQ9TTN3eE1qQTNm/REI4TUh4elpXRnlZ/Mmg4Tm54OGJYVnph/V01sTWpCaVlXTnJa/M0p2ZFc1a2ZHVnVm/REI4ZkRCOGZId3c");
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    height: 100px;
+}
+.footer .social-media {
+    margin-bottom: 20px;
+}
+.footer .social-media a {
+    margin: 0 10px;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+}
+.footer .social-media a:hover {
+    color: #ddd;
+}
+.footer .links a {
+    display: inline-block;
+    margin: 0 15px;
+    text-decoration: none;
+    color:white;
+}
+.footer .links a:hover {
+    text-decoration: underline;
+}
+.Top{
+   color: white;
+}
+.T:hover{
+    text-decoration: underline;
+}
+.T{
+    text-align: right;
+    padding-right: 10px;
+    right:5px;
+    bottom: 2px;
+}
+/* Show the back-to-top button when scrolled */
+  
+.social-media img{
+    width:30px;
+    border-radius: 30px;
+}
+.social-media img:hover{
+    width:40px;
+    border-radius: 40px;
+}
+
